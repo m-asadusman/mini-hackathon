@@ -44,12 +44,9 @@ body{
     gap: 20px;  
 }
 
-nav{
-    position: sticky;
-}
-
 .navbar{
     padding: 0px 9.5%;
+    border-bottom: #d6d6d686 1px solid;
 }
 
 .navbar img{
@@ -60,6 +57,11 @@ nav{
 .section1{
     height: 560px;
     display: flex;
+    background-image: url(./assets/bg.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-bottom: 10px;
 }
 
 .section1 div{    
@@ -471,8 +473,17 @@ h2{
 }
   
 
+@media screen and (max-width: 992px) {
+
+    .section1{
+        background-image: none;
+    }
+}
 @media screen and (max-width: 768px) {
 
+    .section1{
+        background-image: none;
+    }
     
     h1{
         font-size: 35px;
@@ -525,6 +536,10 @@ h2{
 }
 
 @media screen and (max-width: 480px) {
+
+    .section1{
+        background-image: none;
+    }
 
     .topBarContainer{
         flex-wrap: wrap;
